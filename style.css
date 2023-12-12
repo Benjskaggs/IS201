@@ -1,0 +1,74 @@
+body {
+    background-image: url('Islands.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.media-item {
+    position: relative;
+    width: 200px; /* You can adjust this */
+    margin: 10px;
+    border-radius: 10px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensures the image corners are also rounded */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Rounded corners for the images */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold; /* Making the text bold */
+    font-family: 'Roboto', sans-serif; /* Specifying the font family */
+}
+
+
+.category-title {
+    text-align: center;
+    font-size: 24px; /* Large font size */
+    font-weight: bold; /* Optionally, make the title bold */
+    margin-top: 20px; /* Space above the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.about-author-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rounded-container {
+    background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    backdrop-filter: blur(10px); /* Adjust the pixel value for desired blur */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title-background {
+    background-color: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
